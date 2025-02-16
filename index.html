@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal - youtube.com/@codingnepal -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +9,7 @@
     <!-- Linking Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css">
   </head>
   <body>
     <!-- Header / Navbar -->
@@ -243,7 +243,7 @@
             </li>
           </ul>
 
-          <form action="#" class="contact-form">
+          <form action="mailto:sarathisubramaniyan1@gmail.com" method="post" enctype="text/plain" class="contact-form">
             <input type="text" placeholder="Your name" class="form-input" required />
             <input type="email" placeholder="Your email" class="form-input" required />
             <textarea placeholder="Your message" class="form-input" required></textarea>
@@ -251,6 +251,15 @@
           </form>
         </div>
       </section>
+
+      <!-- Popup Modal -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Special Offer!</h2>
+            <p>Get 20% off on your first order. Use code: COFFEE20</p>
+        </div>
+      </div>
 
       <!-- Footer section -->
       <footer class="footer-section">
@@ -277,5 +286,6 @@
 
     <!-- Linking custom script -->
     <script src="script.js"></script>
+    <script src="popup.js"></script>
   </body>
 </html>
